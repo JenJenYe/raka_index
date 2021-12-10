@@ -1,0 +1,18 @@
+@mixin btnStyle($btnColor,$btnWidth) {
+    width: $btnWidth;
+    height: 30px;
+    background:$btnColor;
+    border-radius: 80px;
+    border: 1px solid #ffffff;
+    box-shadow:0px 0px 3px 1px rgba(224,225,228,0.5) inset;
+}
+@mixin  dt() {  
+    @media all and (max-width: $desktop) {
+        @content;
+    }
+}
+@mixin m() {
+    @media all and (max-width: $mobile){
+        @content
+    }  
+}
